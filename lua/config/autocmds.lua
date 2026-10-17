@@ -13,3 +13,13 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.sw = 2
   end,
 })
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Copy yanks to local clipboard via OSC 52",
+  callback = function()
+    local ev = vim.v.event
+    if (ev.operator == "y" or ev.operator == "d") and (ev.regname == "" or ev.regname == "+") then
+      require("vim.ui.clipboard.osc52").copy("+")(ev.regcontents)
+    end
+  end,
+})
