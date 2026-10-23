@@ -10,8 +10,8 @@ vim.g.snacks_animate = false
 vim.g.ai_cmp = false
 
 -- use 2 spaces for tabs
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+vim.g.python_recommended_style = 0
+vim.g.rust_recommended_style = 0
 
 -- enable cursorline
 vim.opt.cursorline = true

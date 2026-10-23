@@ -15,7 +15,7 @@ return {
             "--completion-style=detailed",
             "--function-arg-placeholders",
             "--fallback-style=llvm",
-            "--query-driver=/run/current-system/sw/bin/g++,/usr/bin/clang++,/opt/homebrew/bin/*",
+            "--query-driver=/usr/bin/gcc,/usr/bin/g++,/usr/bin/clang++,/opt/homebrew/bin/*",
             "--experimental-modules-support",
           },
         },
