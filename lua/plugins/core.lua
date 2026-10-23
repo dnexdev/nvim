@@ -2,9 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = vim.fn.filereadable(vim.fn.expand("~/.theme")) == 1 and vim.fn
-        .readfile(vim.fn.expand("~/.theme"))[1]
-        :match("light") and "tokyonight-day" or "tokyonight-storm",
+      colorscheme = "retrobox",
     },
     init = function()
       vim.api.nvim_create_autocmd("ColorScheme", {
