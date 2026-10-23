@@ -9,12 +9,15 @@ vim.g.snacks_animate = false
 -- use that instead of inline suggestions
 vim.g.ai_cmp = false
 
--- use 4 spaces for tabs
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
+-- use 2 spaces for tabs
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 
--- disable cursorline
-vim.opt.cursorline = false
+-- enable cursorline
+vim.opt.cursorline = true
+
+vim.opt.cursorolumn = true
+vim.opt.cursorolumn = "40,80"
 
 vim.g.lazyvim_prettier_needs_config = true
 
