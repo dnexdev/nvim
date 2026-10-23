@@ -41,7 +41,7 @@ end
 
 apply_theme()
 
-local watcher = vim.loop.new_fs_event()
+local watcher = vim.uv.new_fs_event()
 
 watcher:start(
   theme_dir,
@@ -58,11 +58,4 @@ vim.api.nvim_create_autocmd("VimLeavePre", {
     watcher:stop()
     watcher:close()
   end,
-})
-
-vim.lsp.config("*", {
-  capabilities = vim.lsp.protocol.make_client_capabilities(),
-  flags = {
-    debounce_text_changes = 150,
-  },
 })
