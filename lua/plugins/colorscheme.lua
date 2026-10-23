@@ -12,9 +12,15 @@ return {
 
   {
     "projekt0n/github-nvim-theme",
+    opts = {
+      lazy = true,
+    },
   },
 
   {
     "sainnhe/edge",
+    opts = {
+      lazy = true,
+    },
   },
 }
