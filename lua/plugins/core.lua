@@ -1,4 +1,4 @@
-seturn({
+return {
   {
     "LazyVim/LazyVim",
     opts = {
@@ -44,4 +44,4 @@ seturn({
   },
   { "prisma/vim-prisma" },
   { "elkowar/yuck.vim" },
-})
+}
