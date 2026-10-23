@@ -16,8 +16,8 @@ vim.opt.tabstop = 2
 -- enable cursorline
 vim.opt.cursorline = true
 
-vim.opt.cursorolumn = true
-vim.opt.cursorolumn = "40,80"
+vim.opt.cursorcolumn = true
+vim.opt.colorcolumn = "80,120"
 
 vim.g.lazyvim_prettier_needs_config = true
 
